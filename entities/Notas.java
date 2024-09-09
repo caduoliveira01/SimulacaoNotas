@@ -8,6 +8,13 @@ public class Notas {
     }
 
     public String toString(){
-        
+        System.out.println("Final grade:"+Media());
+        if (Media()>=60) {
+            return "Pass!";
+        }
+        else{
+            return "Failed! "+
+            "Missing "+(60-Media())+" point";
+        }
     }
 }
